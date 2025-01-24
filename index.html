@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .zoom:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center" style="background-image: url('file:///D:/Downloads/resort.jpg');">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white text-center py-6 shadow-md">
+        <h1 class="text-3xl font-bold">Welcome to Paradise Resort</h1>
+    </header>
+
+    <!-- Content Section -->
+    <main class="container mx-auto my-8 px-4 bg-opacity-80 rounded shadow-lg">
+        <!-- Introduction Section -->
+        <section class="mb-12 text-center">
+            <h2 class="text-2xl font-semibold text-black-900">Discover Your Perfect Getaway</h2>
+            <p class="text-black-900 mt-2">Experience luxury and comfort at our exclusive resort.</p>
+        </section>
+
+        <!-- Featured Amenities -->
+        <section class="mb-12">
+            <h2 class="text-xl font-semibold text-black-900 mb-6">Our Amenities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 ease-in-out bg-white zoom">
+                    <img src="D:\Downloads\swmming.jpg" alt="Swimming Pool" class="w-full">
+                    <div class="p-4">
+                        <h5 class="text-lg font-bold mb-2">Swimming Pool</h5>
+                        <p class="text-gray-600">Relax and unwind in our infinity pool with stunning views.</p>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 ease-in-out bg-white zoom">
+                    <img src="D:\Downloads\spa.jpg"  alt="Spa" class="w-full">
+                    <div class="p-4">
+                        <h5 class="text-lg font-bold mb-2">Luxury Spa</h5>
+                        <p class="text-gray-600">Rejuvenate with our world-class spa treatments.</p>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 ease-in-out bg-white zoom">
+                    <img src="D:\Downloads\dinning.jpg" alt="Dining" class="w-full">
+                    <div class="p-4">
+                        <h5 class="text-lg font-bold mb-2">Fine Dining</h5>
+                        <p class="text-gray-600">Savor gourmet dishes prepared by top chefs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Form -->
+        <section class="mb-12">
+            <h2 class="text-xl font-semibold text-black-900 mb-6 text-center">Book Your Stay</h2>
+            <form class="space-y-4 bg-white p-6 rounded shadow-md max-w-md mx-auto">
+                <div>
+                    <label for="name" class="block text-gray-700 font-medium">Full Name</label>
+                    <input type="text" id="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 font-medium">Email</label>
+                    <input type="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                <div>
+                    <label for="checkin" class="block text-gray-700 font-medium">Check-in Date</label>
+                    <input type="date" id="checkin" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                <div>
+                    <label for="checkout" class="block text-gray-700 font-medium">Check-out Date</label>
+                    <input type="date" id="checkout" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                <button type="submit" class="w-full bg-indigo-500 text-white py-2 rounded-md hover:bg-indigo-600">Reserve Now</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p class="text-sm">&copy; 2024 Paradise Resort.</p>
+    </footer>
+</body>
+</html>
